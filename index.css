@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css2);
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(0, 255, 242));
+}
+.wrapper{
+  width: 600px;
+  padding: 30px;
+}
+.wrapper .input-data{
+  height: 30px;
+  width: 100%;
+  position: relative;
+}
+
+.wrapper .input-data input{
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 20px;
+  border-bottom: 2px solid #000;
+}
+
+.input-data input:focus ~ label,
+.input-data input:valid ~ label{
+  transform: translateY(-20px);
+  font-size: 20px;
+  color: black;
+}
+
+.wrapper .input-data label{
+  position:absolute;
+  text-align: center;
+  bottom: 10px;
+  left: 0;
+  color: black;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.content #s1{
+  background-color: #73fcfc;
+  text-align: center;
+}
+
+.wrapper .input-data .underline{
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+}
+
+p{
+  display: inline-flex;
+  align-items:self-start;
+  justify-content: space-between;
+  margin-top: 15px;
+}

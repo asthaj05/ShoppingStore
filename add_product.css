@@ -1,0 +1,83 @@
+body{
+  /* min-height: 100vh; */
+  background: #fff;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #000;
+}
+
+.add_product{
+  /* position: fixed; */
+  /* top: 0; */
+  /* left: 0; */
+  /* width: 60%; */
+  /* height: 100%; */
+  background-color:#fff;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 5px 20px 20px;
+  /* z-index: 100; */
+}
+
+header{
+  font-family: 40px;
+  color: #000;
+  padding-bottom: 5px;
+}
+
+.container h6{
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: aqua;
+}
+
+.scrollbox{
+  overflow: auto;
+  padding-right: 10px;
+  visibility: hidden;
+}
+
+.scrollbox-inner,
+.scrollbox:hover{
+  visibility: visible;
+}
+
+.card{
+  position: relative;
+  left: 250px;
+  width: calc(100%,-250px);
+  height: 100vh;
+  background-color: #000;
+
+}
+#display {
+  width: 400px;
+  height: 200px;
+  border: 1px solid black;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+#display {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+}
+.image_section {
+  align-items: center;
+  display: flex;
+  /* position: relative; */
+  justify-content: center;
+  /* margin-top: 105px; */
+  /* margin-right: 97px; */
+  justify-content: center;
+  flex-direction: column;
+}
+
+
